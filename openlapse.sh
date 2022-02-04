@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 DIRECTORY=""
 NAME=""
 DELAY=0
