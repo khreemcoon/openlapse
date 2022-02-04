@@ -30,8 +30,10 @@ if [[ "$NAME" != *".png"*  || "$NAME" != *".PNG"* ]]; then
     NAME+=".png"
 fi
 FULL=$DIRECTORY$NAME
-while true
-do
-    sleep $DELAY
-    scrot $FULL
-done
+if [[ "$DELAY" != 0 ]]; then
+    while true
+    do
+        sleep $DELAY
+        scrot $FULL
+    done
+fi
